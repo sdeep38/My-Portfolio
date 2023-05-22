@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 body {
   background: #1f1f1f;
   height: 100vh;
+}
+
+.bg0 {
+  background: none;
+}
+
+.b0 {
+  border: none;
 }
 
 .navigation {
@@ -59,10 +69,115 @@ ul.navigation li {
   opacity: 1;
 }
 
+.left-profile-bar {
+  max-width: 485px;
+  width: 100%;
+  border: 1px solid #565656;
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.left-profile-bar img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.left-profile-bar .user-email {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+
+.left-profile-bar .user-address {
+  font-size: 16px;
+  color: #28e98c;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: 'PT Serif', serif;
+}
+
+.user-address span {
+  color: #7a7a7e;
+}
+
+.left-profile-bar ul li {
+  padding:  0;
+}
+
+.left-profile-bar ul.social {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.left-profile-bar .social .social-profile-link {
+  display: block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  color: #565656;
+  border: 2px solid #565656;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all .3s;
+}
+
+.left-profile-bar a.social-profile-link:hover {
+  color: #28e98c;
+  border-color: #28e98c;
+}
+
+.left-profile-bar .get-in-touch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f1f1f;
+  background: #28e98c;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 11px 58px 10px 58px;
+  transition: all .3s;
+  border: 2px solid #28e98c;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.left-profile-bar .get-in-touch:hover {
+  background: none;
+  color: #28e98c;
+}
+
 /* Media Queries */
 @media (max-width : 2000px) {
   .navigation {
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .left-profile-bar {
+    max-width: 400px;
+  }
+
+  .left-profile-bar .social {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width : 1555px) {
+  .left-profile-bar {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .left-profile-bar img {
+    margin-bottom: 46px;
   }
 }
