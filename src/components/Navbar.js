@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Navbar() {
+export default function Navbar({ addClass, showTooltip }) {
 
   const [tooltip, setTooltip] = useState(false)
 
@@ -10,44 +10,42 @@ export default function Navbar() {
 
   const navLinks = [
     {
-      label : 'Home', 
+      label: 'Home',
       icon: 'fa fa-home',
       to: '#home'
-    }, 
+    },
     {
-      label : 'About', 
+      label: 'About',
       icon: 'far fa-user',
       to: '#about'
-    }, 
+    },
     {
-      label : 'Skills', 
+      label: 'Skills',
       icon: 'fa fa-tasks',
-      to: '#home'
-    }, 
+      to: '#skills'
+    },
     {
-      label : 'Projects', 
+      label: 'Projects',
       icon: 'fa fa-code-branch',
-      to: '#home'
-    }, 
+      to: '#projects'
+    },
     {
-      label : 'Education', 
+      label: 'Education',
       icon: 'fa fa-user-graduate',
-      to: '#home'
-    }, 
+      to: '#education'
+    },
     {
-      label : 'Contact', 
+      label: 'Contact',
       icon: 'far fa-envelope',
-      to: '#home'
-    }, 
+      to: '#contact'
+    },
   ]
 
   return (
-    <div className='navbar-right'>
-      <ul className="navigation list-group d-flex">
-        {navLinks.map((item, index) => {
-          return <li key={index} className="nav-item list-group-item"><a href={item.to} className={activeLink == item.label ? 'active' : ''} onClick={() => setActiveLink(item.label)}  onMouseEnter={(e) => {setTooltip(true); setHoverActiveLink(item.label)}} onMouseLeave={() => setTooltip(false)}><span className={(hoverActiveLink === item.label && tooltip) ? 'tooltip-text visible' : 'tooltip-text'} >{item.label}</span><i className={item.icon}></i></a></li>
-        })}
-      </ul>
-    </div>
+    <ul className={"navigation list-group d-flex nav-right" + addClass}>
+      {navLinks.map((item, index) => {
+        return <li key={index} className="nav-item list-group-item"><a href={item.to} className={activeLink === item.label ? 'active' : ''} onClick={() => setActiveLink(item.label)} onMouseEnter={(e) => { setTooltip(true); setHoverActiveLink(item.label) }} onMouseLeave={() => setTooltip(false)}><span className={(hoverActiveLink === item.label && tooltip && showTooltip) ? 'tooltip-text visible' : 'tooltip-text'} >{item.label}</span><i className={item.icon}></i></a></li>
+      })}
+    </ul>
   )
 }
