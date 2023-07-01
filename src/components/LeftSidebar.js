@@ -7,7 +7,7 @@ export default function LeftSidebar() {
         {
             label: 'github',
             icon: 'fab fa-github',
-            to: '/',                    
+            to: 'https://github.com/sdeep38',                    
         },
         {
             label: 'whatsapp',
@@ -26,21 +26,21 @@ export default function LeftSidebar() {
         },
     ]
 
-    const email = 'example@gmail.com'   //your email goes here
-    const location = 'Durgapur, West Bengal'    //provide your address
+    const email = 'soumya243@kgpian.iitkgp.ac.in'   //email goes here
+    const mylocation = 'Durgapur, West Bengal'    //address goes here
 
     return (
         <div className='left-profile-bar'>
             <img className='profile-img' src={profileImage} alt="avatar" />
             <h2 className="user-email">{email}</h2>
-            <h2 className="user-address"><span className="prefix"></span>{location}</h2>
+            <h2 className="user-address"><span className="prefix"></span>{mylocation}</h2>
             <ul className="social list-group d-flex">
                 {socialLinks.map((item, index) => {
                     return <li key={index} className="nav-item b0 list-group-item bg0"><a href={item.to} className='social-profile-link'><i className={item.icon}></i></a></li>
                 })}
 
             </ul>
-            <a href="/" className="get-in-touch">Get in Touch</a>
+            <a href="/" className="get-in-touch bg-green rounded_30 d-flex align-items-center justify-content-center fw_500">Resume</a>
         </div>
     )
 }
