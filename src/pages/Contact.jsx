@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
     const handleContactForm = (e) => {
         e.preventDefault();
-        alert('Form is submitted')
+        alert('Form is currently disabled')
     }
 
     const contact = '7865992370'

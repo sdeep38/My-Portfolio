@@ -1,5 +1,6 @@
 import React from 'react'
 import profileImage from '../images/profile-img-custom.jpg'
+import resume from '../images/resume.pdf'
 
 export default function LeftSidebar() {
 
@@ -17,7 +18,7 @@ export default function LeftSidebar() {
         {
             label: 'linkedin',
             icon: 'fab fa-linkedin',
-            to: '/',
+            to: 'https://www.linkedin.com/in/soumyadeep-saha-548258279/',
         },
         {
             label: 'Instagram',
@@ -40,7 +41,7 @@ export default function LeftSidebar() {
                 })}
 
             </ul>
-            <a href="/" className="get-in-touch bg-green rounded_30 d-flex align-items-center justify-content-center fw_500">Resume</a>
+            <a href={resume} target='_blank' rel='noreferrer' className="get-in-touch bg-green rounded_30 d-flex align-items-center justify-content-center fw_500">Resume</a>
         </div>
     )
 }
