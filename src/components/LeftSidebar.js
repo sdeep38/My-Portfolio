@@ -1,6 +1,5 @@
 import React from 'react'
 import profileImage from '../images/profile-img-custom.jpg'
-import resume from '../images/resume.pdf'
 
 export default function LeftSidebar() {
 
@@ -27,8 +26,9 @@ export default function LeftSidebar() {
         },
     ]
 
-    const email = 'soumya243@kgpian.iitkgp.ac.in'   //email goes here
-    const mylocation = 'Durgapur, West Bengal'    //address goes here
+    let email = 'soumya243@kgpian.iitkgp.ac.in'   //email goes here
+    let mylocation = 'Durgapur, West Bengal'    //address goes here
+    let resume = 'https://drive.google.com/drive/folders/1_oy-tZkgRiThaRZwGJkmf00ScfkSDYfK'     //resume link
 
     return (
         <div className='left-profile-bar'>
