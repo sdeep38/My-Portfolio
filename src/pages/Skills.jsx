@@ -22,7 +22,7 @@ export default function Skills() {
         {
             label: 'CSS',
             logo: cssLogo,
-            desc: 'Main tool to design and improve creativity of websites',
+            desc: 'Main tool to design and beautify the elements of the webpage',
         },
         {
             label: 'React JS',
@@ -37,7 +37,7 @@ export default function Skills() {
         {
             label: 'Django',
             logo: djLogo,
-            desc: 'The first backend web framework that I learned while I was in senior secondary school. Still learning to improve.',
+            desc: 'The first backend web framework that I learned while I was in senior secondary standard. Still learning to improve.',
         },
         {
             label: 'C++',
@@ -48,39 +48,33 @@ export default function Skills() {
     ]
 
 
-    const settings = {
+    var settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: 1,
         autoplay: false,
         autoplaySpeed: 2000,
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 1221,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    infinite: true
                 }
             }
         ]
