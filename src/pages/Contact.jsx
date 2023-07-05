@@ -6,7 +6,8 @@ export default function Contact() {
         alert('Form is currently disabled')
     }
 
-    const contact = '7865992370'
+    let contact = '7865992370'
+    let current_location = 'Kharagpur, West Bengal'
     return (
         <section className='contact-section' id='contact'>
             <div className="custom-container">
@@ -24,7 +25,7 @@ export default function Contact() {
                         </li>
                         <li className="list-group-item">
                             <i className="fa fa-location-dot"></i>
-                            <span className="text">Location : Kharagpur, West Bengal</span>
+                            <span className="text">Location : {current_location}</span>
 
                         </li>
                     </ul>
