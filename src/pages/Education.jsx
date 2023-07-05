@@ -11,14 +11,14 @@ export default function Education() {
         {
             start: 2019,
             end: 2021,
-            org: 'Hem Sheela Model School',
-            work: 'CBSE Class 12'
+            org: 'Hem Sheela Model School (CBSE)',
+            work: 'AISSCE - XII'
         },
         {
             start: 2010,
             end: 2019,
-            org: 'Hem Sheela Model School',
-            work: 'CBSE Class 10'
+            org: 'Hem Sheela Model School (CBSE)',
+            work: 'AISSE - X'
         }
     ]
     return (
