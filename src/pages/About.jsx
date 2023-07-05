@@ -12,9 +12,9 @@ export default function About() {
             <h1>Undergraduate student at <span className="name__highlight">IIT Kharagpur</span></h1>
           </div>
 
-          <p className="intro-text">Currently, a third year undergraduate pursuing my B-Tech major in Electrical Engineering from IIT Kharagpur, 
+          <p className="intro-text">Currently, I'm a third year undergraduate pursuing my B-Tech major in Electrical Engineering from IIT Kharagpur, 
           with specialization in Instrumentation Engineering. 
-          <br />Presently exploring the web development domain, inclined more towards backend development.</p>
+          <br />Interested in web development, inclined more towards backend development.</p>
           
         </div>
       </div>
