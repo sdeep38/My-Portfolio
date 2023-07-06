@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.0628eed7.css",
-    "main.js": "/My-Portfolio/static/js/main.3f50570c.js",
+    "main.js": "/My-Portfolio/static/js/main.be24219e.js",
     "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/bgdiy.png": "/My-Portfolio/static/media/bgdiy.c37b291859ae51743e13.png",
     "static/media/profile-img-custom.jpg": "/My-Portfolio/static/media/profile-img-custom.f4b4cabb6b3909b0eaf4.jpg",
     "static/media/bgportfolio.png": "/My-Portfolio/static/media/bgportfolio.11374edbb919aa18188e.png",
     "static/media/bgras.png": "/My-Portfolio/static/media/bgras.9dbb54129d529bad9793.png",
+    "static/media/profilepic.png": "/My-Portfolio/static/media/profilepic.81be752c6fc30f643400.png",
     "static/media/reactjs.png": "/My-Portfolio/static/media/reactjs.ef28a7569ef18dd72579.png",
     "static/media/html.png": "/My-Portfolio/static/media/html.413aea80b1dd6a748842.png",
     "static/media/css.png": "/My-Portfolio/static/media/css.9a088dd12159725b7a63.png",
@@ -18,11 +19,11 @@
     "static/media/slick.woff": "/My-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/My-Portfolio/index.html",
     "main.0628eed7.css.map": "/My-Portfolio/static/css/main.0628eed7.css.map",
-    "main.3f50570c.js.map": "/My-Portfolio/static/js/main.3f50570c.js.map",
+    "main.be24219e.js.map": "/My-Portfolio/static/js/main.be24219e.js.map",
     "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0628eed7.css",
-    "static/js/main.3f50570c.js"
+    "static/js/main.be24219e.js"
   ]
 }
